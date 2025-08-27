@@ -286,7 +286,7 @@ gulp.task('build-azure', gulp.series('build', async () => {
 
     // Copy all necessary files to output directory
     const filesToCopy = [
-        './prompt-engineering-talk.html',
+        './ai-inspiration-5degrees.html',
         './dist/**/*',
         './plugin/**/*',
         './assets/**/*'
@@ -299,10 +299,10 @@ gulp.task('build-azure', gulp.series('build', async () => {
             .on('error', reject);
     });
 
-    // Rename prompt-engineering-talk.html to index.html
-    if (fs.existsSync(path.join(outputDir, 'prompt-engineering-talk.html'))) {
+    // Rename ai-inspiration-5degrees.html to index.html
+    if (fs.existsSync(path.join(outputDir, 'ai-inspiration-5degrees.html'))) {
         fs.renameSync(
-            path.join(outputDir, 'prompt-engineering-talk.html'),
+            path.join(outputDir, 'ai-inspiration-5degrees.html'),
             path.join(outputDir, 'index.html')
         );
     }
