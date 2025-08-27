@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Inspiration: 5 Degrees</title>
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@5.2.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@5.2.1/dist/theme/white.css">
+    <link rel="stylesheet" href="css/ai-inspiration-5degrees.css">
+</head>
+
+<body data-section="intro">
+    <div class="reveal">
+        <!-- Progress indicator -->
+        <div class="progress-container">
+            <div class="section-marker"></div>
+            <div class="section-name intro">Intro</div>
+            <div class="section-name llm">LLM</div>
+            <div class="section-name wow">Way of Working</div>
+            <div class="section-name apps">AI in Apps</div>
+            <div class="section-name prompt">Prompt Engineering</div>
+        </div>
+
+        <div class="slides">
+            <!-- Opening Slide (Horizontal Section 0) -->
+            <section class="slide-bg full-height" style="background: linear-gradient(135deg, #ffeb3b 0%, #ff9800 20%, #e91e63 40%, #9c27b0 60%, #3f51b5 80%, #00bcd4 100%) !important; color: white; position: relative; overflow: hidden;">
+                <div>
+                    <!-- Main Title -->
+                    <h1 style="font-size: 3.5em; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); margin-bottom: 30px; text-align: center;">
+                        AI
+                    </h1>
+                    <h2 style="font-size: 2.2em; color: white; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); margin-bottom: 50px; text-align: center; font-weight: 300;">
+                        Inspiration session
+                    </h2>
+                    
+                    <!-- Subtitle with speaker info -->
+                    <div style="text-align: center; margin-top: 50px;">
+                        <p style="font-size: 1.2em; color: rgba(255, 255, 255, 0.9); margin-bottom: 10px;">
+                            Íslandsútgáfan
+                        </p>
+                       
+                    </div>
+                </div>
+                
+
+                </aside>
+            </section>
+
+            <!-- Intro Section (Horizontal Section 1) -->
+            <section>
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>Concerning Magic...</h2>
+
+                    <div>
+                    <img src="assets/img/ai-is-magic.png" alt="AI is Magic" style="max-width: 500px; margin-top: 30px; border-radius: 15px;">
+                    </div>
+                    <aside class="notes">
+                    <ul>
+                        <li>Hi, so they asked me to hold an inspirational talk about A.I. Well, that's easy. It's very easy to inspire about A.I. Why?</li>
+                        <li>Because A.I. is like MAGIC. And there are few things that inspire better than Magic. I love magic, read a lot of fantasy books, play fantasy games. There's always magic.</li>
+                        <li>But Why is A.I. MAGIC?</li>
+                        <li>Because magic most often has 2 properties:
+                            <ul>
+                                <li>It is marvelous.</li>
+                                <li>And we cannot fully explain it.</li>
+                            </ul>
+                        </li>
+                        <li>Just like A.I. I bet you remember the first time you tried chatgpt and if you're anything like me, you were amazed what it could do. Every day still I see new things that I did not expect, or hold possible, done by A.I. So it's marvelous. And, due to the nature of language models how genetic algorithms and neural networks work, we cannot fully explain them. We are continously researching why and how this works. Magic!</li>
+                    </ul>
+                </aside>
+                </section>
+                
+                <!-- Introduction slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Pleased to meet you!</h3>
+                    <ul>
+                        <li>Tech Lead - Akkuro Lending
+                            <ul>
+                                <li>A.I. Document Extraction</li>
+                            </ul>
+                        </li>
+                        <li>A.I. evangelist
+                            <ul>
+                                <li><a href="https://lively-wave-0cf8b4803.3.azurestaticapps.net/" target="_blank">Kosdapapa Piggybank app</a> <a href="https://github.com/marcovandehaar/kosdapapa" target="_blank"><img src="assets/img/github-mark.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle; margin-left: 10px;"></a></li>
+                                <li>Prompt engineering @ topiconf</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <br>
+                    <img src="assets/img/topiconf-talk.png" alt="Topiconf Talk" style="max-width: 400px; margin-top: 20px; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;">
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>Who am I?</li>
+                            <li>My name is Marco van de Haar and I've been a developer for Topicus for about 18 years, always wandered around the Finance division. And since 2021, as I mentioned, since the first public release of chatGPT I've been enchanted by A.I.</li>
+                            <li>I've hobbied a lot with it, trying to find what worked and what didn't
+                                <ul>
+                                    <li>https://lively-wave-0cf8b4803.3.azurestaticapps.net/</li>
+                                </ul>
+                            </li>
+                            <li>And together with my tem I ve had the priviledge to setup our first applied AI application and bring this to production (Marco will tell you more about this.)</li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <!-- Overview/Index slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Today's Journey</h3>
+                    <ol style="font-size: 0.9em; line-height: 1.6;">
+                        <li><strong>Large Language Models</strong>
+                            <span style="color: #666; font-size: 0.9em;"> - Understanding the magic behind AI</span>
+                        </li>
+                        <li><strong>AI in Way of Working</strong>
+                            <span style="color: #666; font-size: 0.9em;"> - Transforming how we collaborate</span>
+                        </li>
+                        <li><strong>AI in Applications</strong>
+                            <span style="color: #666; font-size: 0.9em;"> - Real-world AI implementations</span>
+                        </li>
+                        <li><strong>Prompt Engineering</strong>
+                            <span style="color: #666; font-size: 0.9em;"> - The art of talking to AI</span>
+                        </li>
+                        <li><strong>Some Tips and Q&A</strong>
+                            <span style="color: #666; font-size: 0.9em;"> - Some tips and questions and insights</span>
+                        </li>
+                    </ol>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>I will be telling you guys a lot, about a lot of subjects. But that's ok, I do not aim to teach you much here, I aim to inspire! So I ask you, if you hear anythin interesting, make a note. It will be for you to dive deeper into that :)</li>
+                            <li>So today we're going to explore AI from 5 different angles - hence "5 Degrees of AI Inspiration"</li>
+                            <li>First, we'll dive into what Large Language Models actually are - the technology that powers ChatGPT and similar tools</li>
+                            <li>Then we'll look at how AI is changing our way of working - the tools and processes that are already transforming how we collaborate</li>
+                            <li>Next, we'll explore AI in actual applications - real examples of AI being used in software and tools</li>
+                            <li>We'll also cover prompt engineering - how to effectively communicate with AI systems to get the best results</li>
+                            <li>And finally, we'll have time for your questions and a discussion about what all this means for us</li>
+                        </ul>
+                    </aside>
+                </section>
+            </section>
+
+            <!-- LLM Section (Horizontal Section 2) -->
+            <section>
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>Large Language Models</h2>
+                    <img src="assets/img/aihistory.jpg" alt="AI History" style="max-width: 800px; margin-top: 30px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto;">
+                    <aside class="notes">
+                        <p>Ok, so AI isnt new. It's been around for decades as you can glance here. But only recently science and technology reached a critical point where we could make the power of A.I. generally available to everyone. LLM's Large Language Models</p>
+                    </aside>
+                </section>
+                
+                <!-- What is an LLM slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>What is an LLM?</h3>
+                    <ul>
+                        <li>Traditional AI: Data → Label → Train → Predict</li>
+                        <li>Example: Risk model for company defaults</li>                        
+                        <li>LLMs: A specific type of model...</li>
+                    </ul>
+                    
+                    <br>
+                    <img src="assets/img/training-llm.png" alt="Training LLM" style="max-width: 600px; margin-top: 20px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto;">
+                    
+                    <aside class="notes">
+                        <p>So, What is an LLM? How are they created?</p>
+                        <ul>
+                            <li>The high-level process of creating an A.I. Model is straightforward:
+                                <ul>
+                                    <li>You need data</li>
+                                    <li>Label that data</li>
+                                    <li>Train a model on that data</li>
+                                    <li>Use the model to make predictions on similar cases</li>
+                                </ul>
+                            </li>
+                            <li>Example: To create a risk model predicting company defaults:
+                                <ul>
+                                    <li>Gather information about existing companies (revenue, costs, size, etc.)</li>
+                                    <li>Label which companies went into default and which did not</li>
+                                    <li>Train a model on this dataset</li>
+                                    <li>Use the model to produce risk scores for future companies</li>
+                                </ul>
+                            </li>
+                            <li>This is called supervised training. The more data you have, the better your model performs.</li>
+                            <li>Getting labeled data is expensive:
+                                <ul>
+                                    <li>If it costs 5 cents to label one record, 1 million records cost $50,000</li>
+                                    <li>Double-checking each record would cost $100,000</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>An LLM is a specific model trained on natural language sources, which allows for unsupervised training.</li>
+                            <li>You do not have to label the data; labels are inferred from the training data itself.</li>
+                            <li>Text is everywhere, making it easy to gather enormous datasets for training.</li>
+                            <li>With access to vast data (like the entire public internet) and the resources for unsupervised training, we can now create large language models.</li>
+                            <li>ChatGPT, for example, is an LLM trained on a diverse range of internet text.</li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <!-- Probability slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Based on Probability</h3>
+                    <img src="assets/drawio/next-token-generator.svg" alt="Next Token Generator" style="max-width: 700px; margin-top: 30px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto;">
+                    
+                    <div style="margin-top: 30px; text-align: center;">
+                        <a href="http://localhost:3000/" target="_blank" style="font-size: 0.9em; color: #1565c0; text-decoration: underline;">
+                            Tuning Parameters
+                        </a>
+                    </div>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>So what goes on under the hood? Most of the models we use today are called "next token generators." Given an input, they use probabilistic calculations to generate an output.</li>
+                            <li>What does that mean? For example, if I ask you your favorite world cuisine, you might answer "Vietnamese." If I ask you again a minute later, you'll likely give the same answer. A model, however, might give a different answer the second time, because its responses are based on probability, not certainty.</li>
+                            <li>The nature of these models is probabilistic, not deterministic. That's why it's impossible to guarantee 100% predictable answers. There are techniques to improve consistency, but it's important to understand that this technology is fundamentally based on probability calculations.</li>
+                            <li>If the models were always completely random, they would be useless. Fortunately, there are parameters you can adjust, such as "top-p" and "temperature," to control the randomness. (Demo these settings.)</li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <!-- Capabilities slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Capabilities</h3>
+                    <div class="definition-box" style="font-size: 0.9em;">
+                        <p><strong>LLMs excel where both the input and output are words, and the rules are fuzzy.</strong></p>
+                    </div>
+                    <ul style="font-size: 0.9em;">
+                        <li>Text generation and completion</li>
+                        <li>Language translation</li>
+                        <li>Code generation and debugging</li>
+                        <li>Question answering and reasoning</li>
+                        <li>Creative writing and content creation</li>
+                        <li>Data analysis and summarization</li>
+                    </ul>
+                    
+                    <aside class="notes">
+                       <ul>
+                            <li>Now you have a high-level idea of how LLMs work under the hood—they're probability machines. Because of their immense size, they can seemingly do everything.</li>
+                            <li>But what are they good at? And what are they not good at? Let's explore that for a bit…</li>
+                            <li>LLMs excel where both the input and output are words, and the rules are fuzzy.</li>
+                            <li>But they can also do images right? Right, but they use different models for that. When you ask ChatGPT to generate an image, it's actually using a separate model trained on visual data.</li>
+                            <li>To keeps things simple, we'll stick to Language models. <li>                                
+                            </li>Think of an LLM like that one friend who’s read everything, speaks eloquently, and will confidently answer anything you ask… but sometimes makes things up without realizing it. The trick is knowing when to trust that friend, and when to check the facts.</li>
+                            <li>Some very successful AI tools include:
+                                <ul>
+                                    <li>Translators, even real-time translation</li>
+                                    <li>Note-taking and meeting summarization (e.g., NoteBookLM)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <!-- Limitations slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Limitations</h3>
+                    <div class="definition-box" style="font-size: 0.9em;">
+                        <p><strong>LLMs struggle with precision, real-time data, and tasks requiring exact logic.</strong></p>
+                    </div>
+                    <ul style="font-size: 0.9em;">
+                        <li>Hallucinations - making up facts confidently</li>                        
+                        <li>Mathematical calculations and precise logic</li>
+                        <li>No access to real-time information</li>
+                        <li>Consistent personality or memory across sessions</li>
+                        <li>Understanding of physical world constraints</li>
+                        <li>Inability to learn from individual conversations</li>
+                    </ul>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <ul style="font-size: 0.9em;">
+                        <li><strong>LLMs are not calculators or truth machines.</strong></li>
+                        <li>They do not <em>know</em> facts; they <em>predict</em> likely answers based on patterns in data.</li>
+                        <li>LLMs are excellent storytellers, but not always reliable truth-tellers. This can be hard to get used to.</li>
+                        <li>We are used to computers giving precise, correct answers—like calculators in math class. If a calculator gives a wrong answer, it's a bug!</li>
+                        <li>With LLMs, for the first time, we must accept that a computer might be wrong or uncertain.</li>
+                        <li>Older LLMs (like GPT-2) might confidently answer questions like "What time is it?" with a random, incorrect time.</li>
+                        <li>LLMs understand your question and generate a syntactically correct answer, but it may not be factually accurate.</li>
+                        <li> modern models seem to have overcome these limitations, but actually, many of them are not solved by creating better models, but by  system prompts and software around the model. </li>
+                    </ul>
+                        </ul>
+                    </aside>
+                </section>
+            </section>
+
+            <!-- AI in Way of Working Section (Horizontal Section 3) -->
+            <section>
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>AI in Way of Working</h2>
+                    <div class="definition-box">
+                        <p> How AI is changing the way we work and collaborate.</p>
+                    </div>
+                    <ul>
+                        <li>Responsible AI - What can we use? And why?</li>
+                        <li>Thousands of AI tools launched daily</li>
+                        <li>Key question: Where is my data going?</li>
+                        <li>2 kinds of data you should keep in mind</li>
+                        <ul>
+                            <li>GDPR and Personal Identifiable Information</li>
+                            <li>Proprietary data protection</li>
+                        </ul>
+                        
+                    </ul>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>So, we've seen that it can actually do a lot. Let your imagination run wild for a moment. I'm sure you can think of at least 10 things it could do to improve the work process of you or your colleagues.</li>
+                            <li>Well, you're not alone :) There are thousands of AI tools that could help you in your work and new ones are launched every day that could make tedious tasks easier, help you brainstorm, generate text or images etc. Take notes, summarize documents etc etc…</li>
+                            <li>But which can you use? and more importantly, why?</li>
+                            <li>I'll start saying that I'm not your legal officer, nor do I pretend to be an expert in the rules and regulation concerning data. So the disclaimer I'll give you is "If you doubt, check it with the right people."</li>
+                            <li>Having said that, there are some principles you should keep in mind. Things you should always keep in mind when using AI tooling.</li>
+                            <li>Whenever considering a tool, you should always ask: Where is my data going and what will it be used for?</li>
+                            <li>Not always easy to answer, when in doubt, verify with the part of your organisation that can help you with that.</li>
+                            <li>See, when you go to ChatGPT.com, you are talking to a version of a LLM. This means that this model runs in the public cloud, probably in one of the huge data centers in the US. OpenAI is a US company. So whatever you send in will probably go to the US.</li>
+                            <li>GDPR considerations:
+                                <ul>
+                                    <li>PII (Personal Identifiable Information) - personal data. You own your own data, so you're allowed to send in that, though I would strongly advise against it.</li>
+                                    <li>PII of others - this is where you need to be careful</li>
+                                </ul>
+                            </li>
+                            <li>Proprietary data, like source code. You cannot publicly share source code of our products.</li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <!-- Public vs Private Models slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Public vs. Private Models</h3>
+                    <img src="assets/drawio/publicllm.drawio.svg" alt="Public vs Private LLM" style="max-width: 90%; max-height: 70vh; margin-top: 20px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto; object-fit: contain;">
+                </section>
+                
+                <!-- Dummy vertical slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>WoW Examples</h3>
+                    <p>Tools, Tools, Tools...</p>
+                    <ul>
+                        <li><a href="https://topicus.sharepoint.com/sites/TopicusArtificialIntelligence/SitePages/Welcome%20to%20the%20Topicus%20Artificial%20Intelligence%20SharePoint.aspx" target="_blank">Topicus AI initiative</a></li>
+                        <li><a href="https://topicus.sharepoint.com/sites/TopicusArtificialIntelligence/Lists/AI%20Tools%20CMDB/AllItems.aspx?viewid=0da199d9-1820-4bf4-b24e-429ca8c42d75&env=WebViewList" target="_blank">Tools inventory</a></li>    
+                        <li>Demo: <a href="https://notebooklm.google/" target="_blank">NotebookLM</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- AI in Apps Section (Horizontal Section 4) -->
+            <section>
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>AI in Applications</h2>
+                    <div class="definition-box">
+                        <p><strong>Incorporating AI Responsibly</strong> </p>
+                    </div>
+                    <ul>
+                        <li>Customer data is not ours to share publicly</li>
+                        <li>Data often contains PII (Personal Identifiable Information)</li>
+                        <li>Public models not suitable for most use cases</li>
+                        <li>Our preferred solution: Serviced models</li>
+                        <li>
+                            <a href="https://oai.azure.com/resource/deployments?wsid=/subscriptions/b39c34f8-f385-425e-9237-c09f9fd6d242/resourceGroups/rg-fyndoo-openai/providers/Microsoft.CognitiveServices/accounts/fyndoo-sweden&tid=ffe86e1f-70b6-4c17-b2db-416509cdb0c1" target="_blank">
+                                Example: GPT on Azure Foundry
+                            </a>
+                        </li>
+                        <li>Alternative: Local deployment</li>
+                    </ul>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>So how do we include AI in our applications? What do we need to take into account?</li>
+                            <li>Well, firstly we work with customer data. This data often is not ours, so also not for us to publicly share. Also, it might contain PII, so for most use cases in our software, we cannot use public models.</li>
+                            <li>For us in Akkuro Lending, our preferred solution: work with serviced models
+                                <ul>
+                                    <li>Simple (just link to API, and start building!)</li>
+                                    <li>Controlled environment</li>
+                                </ul>
+                            </li>
+                            <li>Azure deployments example - we can deploy models in controlled environments</li>
+                            <li>An alternative is local deployment of a model. There are open source models out there that you can deploy locally. Meta has a famous one called "OLlama" which you can even deploy on your laptop. You cannot deploy the huge models powering ChatGPT or Claude. These are closed models, only the backing companies offer them, and they usually partner with a cloud provider to support  more private options.</li>
+                            <li>keep in mind that for private deployments, you're also responsible for maintenance. keeping it up to date, and maybe more complex things like MLOPS.</li>
+                            <li>This is a different ball game and something that you should invest in if you want to take it to PRD.</li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <!-- Applications of AI slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Applications of AI,  What Can It Do?</h3>
+                   
+                    <div style="display: grid; gap: 5px; margin-top: 20px; font-size: 0.75em;">
+                        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 6px 10px; border-radius: 5px; border-left: 3px solid #1976d2;">
+                            <div style="font-weight: bold; color: #1976d2; margin-bottom: 2px; font-size: 0.9em;">• Assistant</div>
+                            <div style="font-style: italic; color: #666; font-size: 0.7em; margin-left: 10px;">Give interactive insights to your users</div>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); padding: 6px 10px; border-radius: 5px; border-left: 3px solid #7b1fa2;">
+                            <div style="font-weight: bold; color: #7b1fa2; margin-bottom: 2px; font-size: 0.9em;">• Analyze documents or images</div>
+                            <div style="font-style: italic; color: #666; font-size: 0.7em; margin-left: 10px;">extract data from uploaded documents</div>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); padding: 6px 10px; border-radius: 5px; border-left: 3px solid #388e3c;">
+                            <div style="font-weight: bold; color: #388e3c; margin-bottom: 2px; font-size: 0.9em;">• Reason over data</div>
+                            <div style="font-style: italic; color: #666; font-size: 0.7em; margin-left: 10px;">Suggest actions based on insights</div>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%); padding: 6px 10px; border-radius: 5px; border-left: 3px solid #5e35b1;">
+                            <div style="font-weight: bold; color: #5e35b1; margin-bottom: 2px; font-size: 0.9em;">• Translate</div>
+                            <div style="font-style: italic; color: #666; font-size: 0.7em; margin-left: 10px;">Present auto translations for user input</div>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%); padding: 6px 10px; border-radius: 5px; border-left: 3px solid #d81b60;">
+                            <div style="font-weight: bold; color: #d81b60; margin-bottom: 2px; font-size: 0.9em;">• Summarize</div>
+                            <div style="font-style: italic; color: #666; font-size: 0.7em; margin-left: 10px;">Provide concise summaries of long documents</div>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%); padding: 6px 10px; border-radius: 5px; border-left: 3px solid #00695c;">
+                            <div style="font-weight: bold; color: #00695c; margin-bottom: 2px; font-size: 0.9em;">• Generate</div>
+                            <div style="font-style: italic; color: #666; font-size: 0.7em; margin-left: 10px;">Create new content for the user</div>
+                        </div>
+                    </div>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>So, what can AI actually do in applications? Let me show you some concrete examples that are already working in production today.</li>
+                            <li>Assistant - Think of ChatGPT embedded in your app. Users can ask questions and get interactive insights about their data. Instead of static reports, they get conversational analysis.</li>
+                            <li>Analyze documents or images - Upload a contract, invoice, or medical scan, and AI extracts structured data automatically. No more manual data entry!</li>
+                            <li>Reason over data - AI doesn't just show you numbers, it suggests what to do. "Your sales are down 15% in region X, consider increasing marketing budget there."</li>
+                            <li>Translate - Real-time translation of user input. Your Dutch app suddenly works in 100+ languages without you writing a single translation.</li>
+                            <li>Summarize - Long documents become digestible summaries. Legal contracts, research papers, meeting transcripts - all condensed to key points.</li>
+                            <li>Generate - Create new content on demand. Product descriptions, email responses, code snippets, marketing copy - AI generates it based on your context.</li>
+                            <li>The magic is that these aren't theoretical anymore. They're working in real applications today. The question isn't "can AI do this?" but "which of these would help your users most?"</li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <!-- Architectures and Solutions slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Architectures and Solutions</h3>
+                    <div class="definition-box" style="font-size: 0.9em;">
+                        <p><strong>How to build AI into your applications</strong></p>
+                    </div>
+                    
+                    <!-- 2x2 Grid Layout -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; font-size: 0.8em;">
+                        <!-- Step 1 -->
+                        <div style="background: rgba(76, 175, 80, 0.1); border: 2px solid #4caf50; border-radius: 8px; padding: 12px; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 10px; background: #4caf50; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8em;">1</div>
+                            <div style="font-weight: bold; color: #2e7d32; font-size: 0.9em; margin-top: 8px;">START SIMPLE</div>
+                            <div style="color: #555; font-size: 0.75em; font-style: italic; margin-top: 4px;">Build something around a prompt</div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div style="background: rgba(33, 150, 243, 0.1); border: 2px solid #2196f3; border-radius: 8px; padding: 12px; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 10px; background: #2196f3; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8em;">2</div>
+                            <div style="font-weight: bold; color: #1565c0; font-size: 0.9em; margin-top: 8px;">Try RAG</div>
+                            <div style="color: #555; font-size: 0.75em; font-style: italic; margin-top: 4px;">Advanced context via retrieval</div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div style="background: rgba(156, 39, 176, 0.1); border: 2px solid #9c27b0; border-radius: 8px; padding: 12px; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 10px; background: #9c27b0; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8em;">3</div>
+                            <div style="font-weight: bold; color: #7b1fa2; font-size: 0.9em; margin-top: 8px;">AI + Tools</div>
+                            <div style="color: #555; font-size: 0.75em; font-style: italic; margin-top: 4px;">Let AI use capabilities</div>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div style="background: rgba(255, 152, 0, 0.1); border: 2px solid #ff9800; border-radius: 8px; padding: 12px; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 10px; background: #ff9800; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8em;">4</div>
+                            <div style="font-weight: bold; color: #f57c00; font-size: 0.9em; margin-top: 8px;">Agentic AI</div>
+                            <div style="color: #555; font-size: 0.75em; font-style: italic; margin-top: 4px;">Multi-step planning</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Example callout -->
+                    <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); border: 2px dashed #4caf50; border-radius: 8px; padding: 10px 12px; margin-top: 15px; text-align: center;">
+                        <div style="font-weight: bold; color: #2e7d32; font-size: 0.85em;">💡 Example: Claude Code - Agentic AI that writes, tests & debugs code</div>
+                    </div>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>Now let's talk about how to actually build AI into your applications. There are several architectural approaches, and I always recommend: START SIMPLE.</li>
+                            <li>START SIMPLE - Begin by building something around a prompt. Don't overcomplicate it. Take user input, send it to an AI model, return the response. That's it. You'll be surprised how much value you can create with just this.</li>
+                            <li>Need advanced context? Try RAG - Retrieval-Augmented Generation. This is when you need your AI to have knowledge beyond what it was trained on. But warning - RAG can get difficult. Not because of the AI part, but because of retrieval. Good retrieval is not trivial. This has always been difficult - it's the domain of search engines like Google.</li>
+                            <li>Give your AI capabilities - Let it use tools. Let the AI determine when and how to use them. Instead of you deciding the workflow, the AI figures out what tools it needs and when to use them.</li>
+                            <li>Agentic AI - These usually work in multi-agent systems and execute complex tasks. Complex does not equal difficult. Complex just means it takes multiple steps to complete. So you need to plan before execution. Planning is an important aspect of agentic AI.</li>
+                            <li>Example: Claude Code - This is agentic AI in action. It can write code, run tests, debug errors, read documentation, and even commit to git. It plans its approach and uses different tools as needed.</li>
+                            <li>The key takeaway: Start with a simple prompt, then add complexity only when you need it. Don't build a space shuttle when a bicycle will do the job.</li>
+                        </ul>
+                    </aside>
+                </section>
+                
+                <!-- Cost slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>Cost</h3>
+                    <div class="definition-box" style="font-size: 0.9em;">
+                        <p><strong>Pay per Token:</strong> Smallest unit of information a model processes</p>
+                    </div>
+                    <ul>
+                        <li>AI uses compute - costs based on operations performed</li>
+                        <li>Token = small word or part of a word</li>
+                        <li>Larger models = more compute = higher cost</li>                        
+                        <li>Multi-modality complexity (images = tiles after size reduction)</li>
+                        <li>
+                            <a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/" target="_blank">
+                                THIS GETS REALLY COMPLEX, QUICKLY
+                            </a>
+                        </li>
+                        <li>Best approach: Try, measure tokens, calculate</li>
+                    </ul>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>So how are costs calculated? By Token.</li>
+                            <li>AI uses compute. This is the capacity necessary to perform operations. I mentioned that most of the popular models we use nowadays are next token generators.</li>
+                            <li>Pay per Token - smallest unit of information a model processes. Small words, or part of a word. like the bartender, might be 3 tokens, might be 4. Interesting stuff, challenge you to dive into this.</li>
+                            <li>Sounds simple? But it gets complex quickly. Larger models use more compute, so processing a token is more expensive.</li>
+                            <li>How big a token is varies per model. Depending on model architecture and design choices.</li>
+                            <li>Then there is Multi-modality. If a token is part of a word, how much is an image??? This is done by slicing it up in tiles, but only after reducing its size.</li>
+                            <li>There is also reasoning. In which multiple requests are done to the model after each step.</li>
+                            <li>For complex use cases, almost impossible to predict.</li>
+                            <li>Best way is empirical. Try, check tokens used. Calculate.</li>
+                        </ul>
+                    </aside>
+                </section>
+            </section>
+
+            <!-- Prompt Engineering Section (Horizontal Section 5) -->
+            <section>
+                <section class="slide-bg">
+                    <div class="r-vstack r-stretch prompt-example" style="height: 100%;">
+                        <h2>Prompt Structure</h2>
+                        <div style="position: relative; width: 100%; margin-top: 20px;">
+                            <!-- Vertical "PROMPT" label that appears in the final fragment -->
+                            <div class="fragment fade-in" data-fragment-index="5"
+                                style="position: absolute; left: -40px; top: 0; bottom: 0; width: 30px; display: flex; align-items: center; justify-content: center; z-index: 10;">
+                                <div
+                                    style="transform: rotate(-90deg); transform-origin: center center; background: linear-gradient(45deg, #1565c0, #42a5f5); padding: 8px 20px; border-radius: 8px; font-weight: bold; color: white; white-space: nowrap; letter-spacing: 2px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+                                    GOOD PROMPT</div>
+                            </div> <!-- Container for all the components -->
+                            <div
+                                style="position: relative; display: flex; flex-direction: column; width: 100%; gap: 10px; font-size: 0.85em;">
+                                <!-- Role Component -->
+                                <div class="fragment fade-in" data-fragment-index="0"
+                                    style="background: linear-gradient(135deg, #fff59d, #ffecb3); border: 3px solid #fbc02d; border-radius: 10px; padding: 12px; transition: all 0.5s ease-in-out; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                    <h3 style="margin: 0; color: #f57f17; font-size: 1.3em; font-weight: bold;">Role
+                                    </h3>
+                                </div>
+                                <!-- Instruction Component -->
+                                <div class="fragment fade-in" data-fragment-index="1"
+                                    style="background: linear-gradient(135deg, #c8e6c9, #a5d6a7); border: 3px solid #66bb6a; border-radius: 10px; padding: 12px; transition: all 0.5s ease-in-out; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                    <h3 style="margin: 0; color: #2e7d32; font-size: 1.3em; font-weight: bold;">
+                                        Instruction</h3>
+                                </div>
+
+                                <!-- Context Component -->
+                                <div class="fragment fade-in" data-fragment-index="2"
+                                    style="background: linear-gradient(135deg, #bbdefb, #90caf9); border: 3px solid #42a5f5; border-radius: 10px; padding: 12px; transition: all 0.5s ease-in-out; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                    <h3 style="margin: 0; color: #0d47a1; font-size: 1.3em; font-weight: bold;">Context
+                                    </h3>
+                                </div>
+
+                                <!-- Constraints & Guidelines Component -->
+                                <div class="fragment fade-in" data-fragment-index="3"
+                                    style="background: linear-gradient(135deg, #ffcdd2, #f8bbd9); border: 3px solid #e91e63; border-radius: 10px; padding: 12px; transition: all 0.5s ease-in-out; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                    <h3 style="margin: 0; color: #ad1457; font-size: 1.3em; font-weight: bold;">
+                                        Constraints & Guidelines</h3>
+                                </div> <!-- Output Format Component -->
+                                <div class="fragment fade-in" data-fragment-index="4"
+                                    style="background: linear-gradient(135deg, #e1bee7, #ce93d8); border: 3px solid #ba68c8; border-radius: 10px; padding: 12px; transition: all 0.5s ease-in-out; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                    <h3 style="margin: 0; color: #6a1b9a; font-size: 1.3em; font-weight: bold;">Output
+                                        Format</h3>
+                                </div>
+                            </div>
+                            <!-- Visual connection element that appears in the final fragment - a border that surrounds everything -->
+                            <div class="fragment fade-in" data-fragment-index="5"
+                                style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; border: 3px dashed #1565c0; border-radius: 15px; z-index: 5; pointer-events: none;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bad Prompt Example -->
+                <section class="r-vstack r-stretch slide-bg">
+                    <div>
+                        <h2>Poorly written prompt</h2>
+                        <div class="definition-box">
+                            <p class="small">Explain how I can improve the performance of my application when retrieving
+                                information from the database.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        <ul>
+                            <li>This will get an answer, probably even a correct one, for some situations. But the
+                                chances that it will be useful for you, are very slim.</li>
+                            <li>So let's rewrite this prompt using the structure we just explained</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- Good Prompt Example -->
+                <section name="good prompt" class="slide-bg">
+                    <div class="r-vstack r-stretch small prompt-example">
+                        <!-- Slide content with simplified approach and smaller font size -->
+                        <div class="prompt-content" style="font-size: 0.8em;"> <!-- Role -->
+                            <div
+                                style="display: flex; align-items: stretch; margin-bottom: 8px; border: 3px solid #fbc02d; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                                <div class="fragment current-visible" data-fragment-index="0"
+                                    style="width: 20%; background: linear-gradient(135deg, #fff59d, #ffecb3); border-right: 3px solid #fbc02d; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: #f57f17; padding: 8px;">
+                                    Role
+                                </div>
+                                <div
+                                    style="flex: 1; padding: 8px; background: linear-gradient(135deg, #fff9c4, #fffde7); color: #333;">
+                                    You are a performance optimization expert specializing in database queries and
+                                    indexing strategies.
+                                </div>
+                            </div>
+
+                            <!-- Instruction -->
+                            <div
+                                style="display: flex; align-items: stretch; margin-bottom: 8px; border: 3px solid #66bb6a; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                                <div class="fragment current-visible" data-fragment-index="1"
+                                    style="width: 20%; background: linear-gradient(135deg, #c8e6c9, #a5d6a7); border-right: 3px solid #66bb6a; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: #2e7d32; padding: 8px;">
+                                    Instruction
+                                </div>
+                                <div
+                                    style="flex: 1; padding: 8px; background: linear-gradient(135deg, #e8f5e8, #f1f8e9); color: #333;">
+                                    Explain how I can improve the performance of my application when retrieving
+                                    information from the database.
+                                </div>
+                            </div>
+
+                            <!-- Context -->
+                            <div
+                                style="display: flex; align-items: stretch; margin-bottom: 8px; border: 3px solid #42a5f5; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                                <div class="fragment current-visible" data-fragment-index="2"
+                                    style="width: 20%; background: linear-gradient(135deg, #bbdefb, #90caf9); border-right: 3px solid #42a5f5; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: #0d47a1; padding: 8px;">
+                                    Context
+                                </div>
+                                <div
+                                    style="flex: 1; padding: 8px; background: linear-gradient(135deg, #e3f2fd, #f3e5f5); color: #333;">
+                                    My application uses SQL Server with a large dataset containing millions of records.
+                                    The most frequent queries involve searching, filtering, and joining multiple tables.
+                                    The application experiences slow response times, especially under high concurrent
+                                    load.
+                                </div>
+                            </div>
+
+                            <!-- Constraints and Guidelines -->
+                            <div
+                                style="display: flex; align-items: stretch; margin-bottom: 8px; border: 3px solid #e91e63; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                                <div class="fragment current-visible" data-fragment-index="3"
+                                    style="width: 20%; background: linear-gradient(135deg, #ffcdd2, #f8bbd9); border-right: 3px solid #e91e63; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: #ad1457; padding: 8px;">
+                                    Constraints
+                                </div>
+                                <div
+                                    style="flex: 1; padding: 8px; background: linear-gradient(135deg, #fce4ec, #f3e5f5); color: #333;">
+                                    Provide recommendations on indexing strategies, query optimization, caching
+                                    techniques, and database schema design.
+                                </div>
+                            </div>
+
+                            <!-- Output Format -->
+                            <div
+                                style="display: flex; align-items: stretch; margin-bottom: 8px; border: 3px solid #ba68c8; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                                <div class="fragment current-visible" data-fragment-index="4"
+                                    style="width: 20%; background: linear-gradient(135deg, #e1bee7, #ce93d8); border-right: 3px solid #ba68c8; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1em; color: #6a1b9a; padding: 8px;">
+                                    Output Format
+                                </div>
+                                <div
+                                    style="flex: 1; padding: 8px; background: linear-gradient(135deg, #f3e5f5, #fce4ec); color: #333;">
+                                    Your response should include clear explanations, practical examples, and code
+                                    snippets where applicable.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Final fragment to pause before advancing to next slide -->
+                        <div class="fragment" data-fragment-index="5"
+                            style="position: absolute; top: 0; left: 0; width: 1px; height: 1px; opacity: 0;"></div>
+                    </div>
+                    <aside class="notes">
+                        <ul>
+                            <li>Now I'm not going to show you the response here, but the slides will be available to everyone at the end, and I will challenge you to try it yourself. It's far more effective.</li>
+                            <li>Even though prompting is very forgiving, using it effectively like this is much like strict syntax in programming languages.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>Prompting Patterns</h2>
+                    
+                    <!-- 3 Pattern Cards -->
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; font-size: 0.8em;">
+                        <!-- Few-Shot Pattern -->
+                        <div class="fragment fade-in" data-fragment-index="0" style="background: linear-gradient(135deg, #fff59d 0%, #ffecb3 100%); border: 3px solid #fbc02d; border-radius: 12px; padding: 15px; position: relative; display: flex; flex-direction: column;">
+                            <div style="position: absolute; top: -12px; left: 15px; background: #fbc02d; color: white; border-radius: 20px; padding: 4px 12px; font-weight: bold; font-size: 0.75em;">
+                                PATTERN 1
+                            </div>
+                            <div style="font-weight: bold; color: #f57f17; font-size: 1.2em; margin-top: 10px; margin-bottom: 8px; text-align: center;">
+                                📚 Few-Shot
+                            </div>
+                            <div style="color: #333; font-size: 0.85em; line-height: 1.3; flex: 1;">
+                                <strong>Teaching by demonstration</strong><br>
+                                Show examples instead of explaining rules
+                            </div>
+                            <div style="background: rgba(245, 127, 23, 0.1); border-radius: 6px; padding: 6px; font-size: 0.75em; color: #f57f17; font-style: italic; margin-top: auto;">
+                                "Give a few Q&A pairs, model continues in same style"
+                            </div>
+                        </div>
+                        
+                        <!-- Chain of Thought Pattern -->
+                        <div class="fragment fade-in" data-fragment-index="1" style="background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%); border: 3px solid #66bb6a; border-radius: 12px; padding: 15px; position: relative; display: flex; flex-direction: column;">
+                            <div style="position: absolute; top: -12px; left: 15px; background: #66bb6a; color: white; border-radius: 20px; padding: 4px 12px; font-weight: bold; font-size: 0.75em;">
+                                PATTERN 2
+                            </div>
+                            <div style="font-weight: bold; color: #2e7d32; font-size: 1.2em; margin-top: 10px; margin-bottom: 8px; text-align: center;">
+                                🧠 Chain of Thought
+                            </div>
+                            <div style="color: #333; font-size: 0.85em; line-height: 1.3; flex: 1;">
+                                <strong>Step-by-step reasoning</strong><br>
+                                Makes thinking process visible for complex problems
+                            </div>
+                            <div style="background: rgba(46, 125, 50, 0.1); border-radius: 6px; padding: 6px; font-size: 0.75em; color: #2e7d32; font-style: italic; margin-top: auto;">
+                                "Think step by step" unlocks better reasoning
+                            </div>
+                        </div>
+                        
+                        <!-- Flipped Interaction Pattern -->
+                        <div class="fragment fade-in" data-fragment-index="2" style="background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%); border: 3px solid #42a5f5; border-radius: 12px; padding: 15px; position: relative; display: flex; flex-direction: column;">
+                            <div style="position: absolute; top: -12px; left: 15px; background: #42a5f5; color: white; border-radius: 20px; padding: 4px 12px; font-weight: bold; font-size: 0.75em;">
+                                PATTERN 3
+                            </div>
+                            <div style="font-weight: bold; color: #0d47a1; font-size: 1.2em; margin-top: 10px; margin-bottom: 8px; text-align: center;">
+                                🔄 Flipped Interaction
+                            </div>
+                            <div style="color: #333; font-size: 0.85em; line-height: 1.3; flex: 1;">
+                                <strong>AI asks questions first</strong><br>
+                                Like a consultant gathering requirements
+                            </div>
+                            <div style="background: rgba(13, 71, 161, 0.1); border-radius: 6px; padding: 6px; font-size: 0.75em; color: #0d47a1; font-style: italic; margin-top: auto;">
+                                "Wait, I need more info first" - built into ChatGPT Deep Research
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom callout -->
+                    <div class="fragment fade-in" data-fragment-index="3" style="background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%); border: 1px solid #1565c0; border-radius: 6px; padding: 6px 10px; margin-top: 15px; text-align: center; clear: both;">
+                        <div style="font-weight: bold; color: #1565c0; font-size: 0.7em;">
+                            💡 These patterns align prompts with AI learning capabilities for better results
+                        </div>
+                    </div>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li><strong>Prompt Patterns Introduction:</strong> In recent years, researchers from companies like Google, OpenAI, and Meta have explored prompt patterns. You know what's funny here? This is the first time we have this tool, AI, which we have to research how to use it. There's no manual here.</li>                            
+                            <li>So, a lot of research is being done on how to best use them. They found that structuring prompts in standard ways that align with AI learning capabilities increases the likelihood of relevant, insightful responses.</li>
+                            <li>Some examples of these patterns include few-shot, chain-of-thought, tree-of-thoughts, and flipped interaction. Look them up—interesting stuff!</li>
+                            <li>I'll quickly dive into a few of them: Few shots, Chain of Thought, and Flipped interaction.</li>
+                            
+                            <li><strong>Few-Shot Pattern:</strong> This is like teaching by demonstration — instead of telling the model the rule, you just show it a couple of examples.</li>
+                            <li>Works well when you need consistent formatting or when you're nudging the model toward a specific style.</li>
+                            <li>Example: give a few Q&A pairs in your desired tone, and the model will continue in the same style.</li>
+                            
+                            <li><strong>Chain of Thought:</strong> Back in 2023, long ago in A.I. terms, they were searching for how to unlock reasoning capabilities in these models.</li>                            
+                            <li>So, they found that by just telling the model to "think step by step" - by explicitly asking the model to reason step by step, you reduce errors in logic-heavy tasks.</li>
+                            <li>Great for debugging code, solving word problems, or explaining technical reasoning. It makes the thought process visible — which also makes it easier for humans to catch mistakes.</li>
+                            <li>This is also built in, in the system prompts of modern models. When you ask GPT 5 a question requiring multiple steps to answer, you can see it working through the problem step by step.</li>
+
+                            <li><strong>Flipped Interaction:</strong> Another great example of a prompting pattern is Flipped interaction. When prompting, you're probably used to asking questions and getting answers, right?</li>
+                            <li>But what if you don't know the questions? What if you need an answer in a domain you know nothing about?</li>
+                            <li>Instead of jumping straight to an answer, the model plays back like a consultant: "Wait, I need more info first."</li>
+                            <li>Very effective  in domains you do not know much about.</li>
+                            <li>This is also one of the patterns which is built into the system prompts of larger models. Anyone of you ever tried Deep Research? For instance from ChatGPT? You can ask it a question and it will spend like 5-20 minutes researching, reasoning and compiling an answer.</li>
+                            <li>If you ask it a short question, it will almost always reply by asking you return questions. Because deep research takes a lot of time from the model, and time for you, and costs way more tokens than a regular question. So it would be a waste if it didn't understand your question correctly, so it will try to get it clear.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- Prompts in your application slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>Prompts in your application</h2>
+                    
+                    <div style="text-align: center; margin-top: 50px;">
+                        <img src="assets/img/computersayshi.png" alt="Computer Says Hi" style="max-width: 600px; margin-top: 30px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto;">
+                    </div>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>Prompts are the way to communicate with an LLM. But what not everyone realizes yet is that prompts are THE way to communicate with an LLM. There is no other. So if you build an application which uses an LLM to perform a task, you need a prompt, natural language, in your software. The prompt contains the question you want the LLM to answer, so it will contain business logic. Prompts in your software are called system prompts.</li>
+                            <li>Some system prompts enrich user input for instance in a chatbot. Some system prompts are completely invisible to the user, for instance, when your app does not have direct user interface. For example, we have an app, analysing financial documents.</li>
+                            <li>Used in this way, prompts are not so different from the source code of your application. My advice here is to treat it as such.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- Prompts as source code slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>🤖 Prompts = 💻 Code</h2>
+                    
+                    <ul style="font-size: 0.9em; line-height: 1.6; margin-top: 40px;">
+                        <li><strong>📋 Version Control</strong> - Track changes with source control</li>
+                        <li><strong>🏷️ Versioning</strong> - Version prompts across releases</li>
+                        <li><strong>✅ Testing</strong> - Add automated tests for prompts</li>
+                        <li><strong>🔄 Evaluation</strong> - Automate prompt output evaluation</li>
+                    </ul>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>Use source control to track changes.</li>
+                            <li>Version your prompts to differentiate over releases</li>
+                            <li>Test your prompts by adding automated tests</li>
+                            <li>Evaluate prompt output. Automate this, early on. This world is changing rapidly. What didn't work yesterday, might work perfectly on a new model version tomorrow. Perhaps you'd like to check that new model provider which is now a lot cheaper. Or even a locally deployed model. Either way, you need to be able to check this quickly. So automate your evaluation early.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- Defensive prompting slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>Defensive Prompting</h2>
+                    
+                    <div style="text-align: center; margin-top: 50px;">
+                        <img src="assets/img/hackermagic.png" alt="Hacker Magic" style="max-width: 600px; margin-top: 30px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto;">
+                    </div>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>One other subject I want to inform you guys about is defensive prompt engineering. Just like regular applications, ai. Enabled applications can be used by intended users and malicious attackers. Everything that can be used will also be abused. There will alsways be users trying to exploit it. An Prompting an AI open up a new palette of risks.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- Risks slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>Risks</h2>
+                    
+                    <div style="margin-top: 30px;">
+                        <p style="font-size: 1em; color: #555; margin-bottom: 25px; font-weight: 500;">Three main types of prompt attacks to defend against:</p>
+                        
+                        <ul style="font-size: 0.9em; line-height: 1.8; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 25px;">
+                                <strong style="color: #c2185b; font-size: 1.1em;">Prompt Extraction</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 20px;">Extracting the application's system prompt to replicate or exploit</span>
+                            </li>
+                            
+                            <li style="margin-bottom: 25px;">
+                                <strong style="color: #f57c00; font-size: 1.1em;">Jailbreaking & Prompt Injection</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 20px;">Getting the model to perform harmful or unintended actions</span>
+                            </li>
+                            
+                            <li style="margin-bottom: 25px;">
+                                <strong style="color: #388e3c; font-size: 1.1em;">Information Extraction</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 20px;">Getting the model to reveal training data or context information</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>Risks you should be aware of when you build an application which harnesses the power of AI. There are 3 main types of prompt attacks you want to defend against:</li>
+                            <li><strong>Prompt extraction</strong> - Extracting the application's prompt, including the system prompt, either to replicate or exploit the application</li>
+                            <li><strong>Jailbreaking and prompt injection</strong> - Getting the model to do bad things</li>
+                            <li><strong>Information extraction</strong> - Getting the model to reveal its training data or information used in its context</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- Possible Consequences slide -->
+                <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h2>Possible Consequences</h2>
+                    
+                    <div style="margin-top: 20px;">
+                        
+                        <ul style="font-size: 0.7em; line-height: 1.4; list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 12px;">
+                                <strong style="color: #d32f2f; font-size: 1em;">Remote Code or Tool Execution</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 15px;">Unauthorized execution of code or system tools</span>
+                            </li>
+                            
+                            <li style="margin-bottom: 12px;">
+                                <strong style="color: #f57c00; font-size: 1em;">Data Leaks</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 15px;">Extraction of private system and user information</span>
+                            </li>
+                            
+                            <li style="margin-bottom: 12px;">
+                                <strong style="color: #7b1fa2; font-size: 1em;">Social Harms</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 15px;">Providing knowledge for dangerous or criminal activities</span>
+                            </li>
+                            
+                            <li style="margin-bottom: 12px;">
+                                <strong style="color: #1976d2; font-size: 1em;">Misinformation</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 15px;">Manipulation of model outputs to spread false information</span>
+                            </li>
+                            
+                            <li style="margin-bottom: 12px;">
+                                <strong style="color: #388e3c; font-size: 1em;">Service Interruption and Subversion</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 15px;">Unauthorized access, incorrect decisions, or service disruption</span>
+                            </li>
+                            
+                            <li style="margin-bottom: 12px;">
+                                <strong style="color: #e91e63; font-size: 1em;">Brand Risk</strong>
+                                <br>
+                                <span style="color: #666; margin-left: 15px;">Toxic or inappropriate statements causing PR crises</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>Prompt attacks pose multiple risks for applications; some are more devastating than others. Here are just a few of them:</li>
+                            <li><strong>Remote code or tool execution</strong> - For applications with access to powerful tools, bad actors can invoke unauthorized code or tool execution. Imagine if someone finds a way to get your system to execute an SQL query that reveals all your users' sensitive data or sends unauthorized emails to your customers. As another example, let's say you use AI to help you run a research experiment, which involves generating experiment code and executing that code on your computer. An attacker can find ways to get the model to generate malicious code to compromise your system.</li>
+                            <li><strong>Data leaks</strong> - Bad actors can extract private information about your system and your users.</li>
+                            <li><strong>Social harms</strong> - AI models help attackers gain knowledge and tutorials about dangerous or criminal activities, such as making weapons, evading taxes, and exfiltrating personal information.</li>
+                            <li><strong>Misinformation</strong> - Attackers might manipulate models to output misinformation to support their agenda.</li>
+                            <li><strong>Service interruption and subversion</strong> - This includes giving access to a user who shouldn't have access, giving high scores to bad submissions, or rejecting a loan application that should've been approved. A malicious instruction that asks the model to refuse to answer all the questions can cause service interruption.</li>
+                            <li><strong>Brand risk</strong> - Having politically incorrect and toxic statements next to your logo can cause a PR crisis, such as when Google AI search urged users to eat rocks or when Microsoft's chatbot Tay spat out racist comments. Even though people might understand that it's not your intention to make your application offensive, they can still attribute the offenses to your lack of care about safety or just incompetence.</li>
+                             <li>Very interesting stuff, this. I do not have enough time to go into this in detail, but I'll give you some sources at the end of the presentation which you can use to dive further into this.</li>
+
+                        </ul>
+                    </aside>
+                </section>
+
+            </section>
+
+            <!-- Closing Slide -->
+            <section class="slide-bg full-height" style="background: linear-gradient(135deg, #1565c0 0%, #42a5f5 50%, #e3f2fd 100%) !important; color: white;">
+                <div>
+                    <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                        AI Inspiration
+                    </h1>
+                    <p style="font-size: 1.5em; color: rgba(255, 255, 255, 0.9); text-align: center; margin-top: 40px;">
+                        Exploring the world of <span class="keyword-highlight" style="color: #1a1a1a;">artificial intelligence</span> together
+                    </p>
+                    
+                    <div style="margin-top: 60px; text-align: center;">
+                        <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1em;">
+                            Thank you!
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js@5.2.1/dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@5.2.1/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
+    <script src="https://unpkg.com/reveal.js@5.2.1/plugin/highlight/highlight.js"></script>
+    <script src="js/ai-inspiration-5degrees.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+.reveal h1,
+.reveal h2 {
+    color: #e65100;
+    /* Vibrant orange for high contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.reveal h2.small {
+    font-size: 1.1em;
+}
+
+.reveal h3.small {
+    font-size: 1.1em;
+}
+
+.reveal h3 {
+    color: #1565c0;
+    /* Strong blue for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.reveal ul li {
+    font-size: 0.8em;
+    /* Slightly larger text */
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.reveal .slides section {
+    color: #212121;
+    padding: 40px 20px 20px 20px;
+    /* Added top padding to make room for progress indicator */
+    border-radius: 10px;
+}
+
+/* Slide background - only applied to content slides (innermost sections or standalone sections) */
+.reveal .slides section.slide-bg {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e3f2fd 100%);
+    /* Light gradient with subtle blue tint */
+    border: 2px solid #e0e0e0;
+    margin-top: 30px;
+    /* Add space between progress bar and slide background */
+    border-radius: 8px;
+    /* Add subtle rounded corners */
+}
+
+/* Adjust the reveal container to account for the spacing */
+.reveal .slides {
+    padding-top: 20px;
+    /* Additional padding to prevent overlap */
+}
+
+/* Full height slide class for special slides like opening slide */
+.reveal .slides section.full-height {
+    height: calc(100vh - 30px) !important; /* Full height minus space for progress bar */
+    margin-top: 20px !important; /* Same spacing as other slides */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    padding: 0 !important;
+}
+
+.reveal .slides section.full-height > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reveal p {
+    font-size: 1.0em;
+    color: #424242;
+}
+
+.reveal p.small {
+    font-size: 0.8em;
+    color: #616161;
+}
+
+.reveal div.small {
+    font-size: 0.8em;
+    color: #616161;
+}
+
+.reveal li {
+    font-size: 1.0em;
+    color: #212121;
+}
+
+.definition-box {
+    border: 2px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.definition-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.definition-box p {
+    margin: 0;
+    color: #424242;
+}
+
+/* Keyword highlighting */
+.keyword-highlight {
+    background: linear-gradient(135deg, #ffeb3b, #ff9800);
+    color: #1a1a1a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-shadow: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Progress indicator styles */
+.progress-container {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 6px;
+    background-color: rgba(224, 224, 224, 0.8);
+    /* Light gray background */
+    border-radius: 3px;
+    z-index: 1000;
+    pointer-events: none;
+    /* So it doesn't interfere with clicks */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section-name {
+    position: absolute;
+    top: 18px;
+    /* 6px for the height of the progress bar + 12px margin */
+    transform: translateX(-50%);
+    font-size: 0.5em;
+    color: #424242;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.section-marker {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(45deg, #e65100, #ff9800);
+    /* Orange gradient */
+    border-radius: 3px;
+    transition: left 0.6s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Define positions for each section marker */
+body[data-section="intro"] .section-marker {
+    left: 0%;
+}
+
+body[data-section="llm"] .section-marker {
+    left: 20%;
+}
+
+body[data-section="wow"] .section-marker {
+    left: 40%;
+}
+
+body[data-section="apps"] .section-marker {
+    left: 60%;
+}
+
+body[data-section="prompt"] .section-marker {
+    left: 80%;
+}
+
+/* Show only the current section name */
+body[data-section="intro"] .section-name.intro,
+body[data-section="llm"] .section-name.llm,
+body[data-section="wow"] .section-name.wow,
+body[data-section="apps"] .section-name.apps,
+body[data-section="prompt"] .section-name.prompt {
+    opacity: 1;
+}
+
+/* Position section names */
+.section-name.intro {
+    left: 10%;
+}
+
+.section-name.llm {
+    left: 30%;
+}
+
+.section-name.wow {
+    left: 50%;
+}
+
+.section-name.apps {
+    left: 70%;
+}
+
+.section-name.prompt {
+    left: 90%;
+}
+
+/* Override code block styling for light theme */
+.reveal div[style*="background: #2b2b2b"],
+.reveal div[style*="background: #333"] {
+    background: #f8f9fa !important;
+    color: #212121 !important;
+    border: 3px solid #1565c0 !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Ensure code text is dark on light backgrounds */
+.reveal code {
+    color: #1565c0;
+    background: #e3f2fd;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Make opening slide fill the screen vertically */
+.reveal .slides > section:first-child {
+    height: 85% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Ensure the opening slide content container also fills available space */
+.reveal .slides > section:first-child > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
