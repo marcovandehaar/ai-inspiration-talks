@@ -289,7 +289,9 @@ gulp.task('build-azure', gulp.series('build', async () => {
         './ai-inspiration-5degrees.html',
         './dist/**/*',
         './plugin/**/*',
-        './assets/**/*'
+        './assets/**/*',
+        './js/**/*',
+        './css/**/*'
     ];
 
     await new Promise((resolve, reject) => {
