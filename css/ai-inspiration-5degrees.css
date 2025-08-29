@@ -159,7 +159,7 @@
 .section-marker {
     position: absolute;
     top: 0;
-    width: 20%;
+    width: 16.66%;
     height: 100%;
     background: linear-gradient(45deg, #e65100, #ff9800);
     /* Orange gradient */
@@ -174,19 +174,23 @@ body[data-section="intro"] .section-marker {
 }
 
 body[data-section="llm"] .section-marker {
-    left: 20%;
+    left: 16.66%;
 }
 
 body[data-section="wow"] .section-marker {
-    left: 40%;
+    left: 33.33%;
 }
 
 body[data-section="apps"] .section-marker {
-    left: 60%;
+    left: 50%;
 }
 
 body[data-section="prompt"] .section-marker {
-    left: 80%;
+    left: 66.66%;
+}
+
+body[data-section="tips"] .section-marker {
+    left: 83.33%;
 }
 
 /* Show only the current section name */
@@ -194,29 +198,34 @@ body[data-section="intro"] .section-name.intro,
 body[data-section="llm"] .section-name.llm,
 body[data-section="wow"] .section-name.wow,
 body[data-section="apps"] .section-name.apps,
-body[data-section="prompt"] .section-name.prompt {
+body[data-section="prompt"] .section-name.prompt,
+body[data-section="tips"] .section-name.tips {
     opacity: 1;
 }
 
 /* Position section names */
 .section-name.intro {
-    left: 10%;
+    left: 8.33%;
 }
 
 .section-name.llm {
-    left: 30%;
+    left: 25%;
 }
 
 .section-name.wow {
-    left: 50%;
+    left: 41.66%;
 }
 
 .section-name.apps {
-    left: 70%;
+    left: 58.33%;
 }
 
 .section-name.prompt {
-    left: 90%;
+    left: 75%;
+}
+
+.section-name.tips {
+    left: 91.66%;
 }
 
 /* Override code block styling for light theme */

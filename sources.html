@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Inspiration: Sources & Further Reading</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e3f2fd 100%);
+            min-height: 100vh;
+            color: #212121;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            color: #e65100;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            color: #424242;
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .sources-grid {
+            display: grid;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .source-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e3f2fd 100%);
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .source-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .source-title {
+            color: #1565c0;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 12px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .source-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #1565c0, #42a5f5);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 15px;
+            transition: transform 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .source-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .source-description {
+            color: #424242;
+        }
+
+        .source-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .source-description li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: #424242;
+        }
+
+        .source-description li::before {
+            content: "•";
+            color: #e65100;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .category-header {
+            background: linear-gradient(45deg, #e65100, #ff9800);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 40px 0 20px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(45deg, #e65100, #ff9800);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .back-link:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            border: 2px solid #e0e0e0;
+        }
+
+        .footer p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .source-card {
+                padding: 20px;
+            }
+            
+            .back-link {
+                position: static;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="ai-inspiration-5degrees.html#/6" class="back-link">← Back to Presentation</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Sources & Further Reading</h1>
+            <p>Dive deeper into AI, LLMs, and practical implementation with these carefully curated resources from the presentation.</p>
+        </div>
+
+        <div class="category-header">📚 Presentation Resources</div>
+        <div class="sources-grid">
+            <div class="source-card">
+                <div class="source-title">Slides (Deployed)</div>
+                <a href="https://witty-desert-010db3703.6.azurestaticapps.net/" target="_blank" class="source-link">View Slides</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Final presentation slides</li>
+                        <li>Easy access for audience reference</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="source-card">
+                <div class="source-title">Slides Source Code</div>
+                <a href="https://github.com/Marco-van-de-Haar_topicus/topiconf-prompt-engineering.git" target="_blank" class="source-link">GitHub Repository</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Editable source files for slides</li>
+                        <li>Technical setup for reproduction or reuse</li>
+                        <li>Private repo - please request access @Marco van de Haar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-header">🔬 Research & Fundamentals</div>
+        <div class="sources-grid">
+            <div class="source-card">
+                <div class="source-title">Unlocking Reasoning with Chain of Thought</div>
+                <a href="https://research.google/blog/language-models-perform-reasoning-via-chain-of-thought/" target="_blank" class="source-link">Read Research</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Key research on reasoning in LLMs</li>
+                        <li>How chain-of-thought prompts improve results</li>
+                        <li>Foundational paper for prompt engineering patterns</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="source-card">
+                <div class="source-title">Prompting Patterns - White et al.</div>
+                <a href="https://arxiv.org/abs/2302.11382" target="_blank" class="source-link">Read Paper</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Collection of prompting strategies</li>
+                        <li>Research-backed patterns for better LLM output</li>
+                        <li>Comprehensive guide to effective prompting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-header">📖 Books & Comprehensive Guides</div>
+        <div class="sources-grid">
+            <div class="source-card">
+                <div class="source-title">AI Engineering: Building Applications with Foundation Models</div>
+                <a href="https://www.amazon.nl/-/en/Chip-Huyen/dp/1098166302" target="_blank" class="source-link">Buy Book</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Practical guide for AI app development by Chip Huyen</li>
+                        <li>Covers infrastructure, deployment & scaling</li>
+                        <li>Essential reading for production AI systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-header">🛠️ Practical Implementation</div>
+        <div class="sources-grid">
+            <div class="source-card">
+                <div class="source-title">Building Windsurf with Varun Mohan</div>
+                <a href="https://newsletter.pragmaticengineer.com/p/building-windsurf-with-varun-mohan" target="_blank" class="source-link">Read Case Study</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Case study on AI-powered dev tools</li>
+                        <li>Lessons from building a code AI assistant</li>
+                        <li>Real-world engineering challenges and solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="source-card">
+                <div class="source-title">AI Tooling for Software Engineers in 2024</div>
+                <a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2024" target="_blank" class="source-link">Read Review</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Review of current AI dev tools</li>
+                        <li>Honest assessment of what works today</li>
+                        <li>Practical recommendations for developers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="source-card">
+                <div class="source-title">Agentic AI Tutorials</div>
+                <a href="https://www.linkedin.com/posts/that-aum_i-have-built-and-sold-ai-agents-to-100-companies-activity-7361364379407122433-Op9w" target="_blank" class="source-link">View Tutorial</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Practical lessons from building AI agents</li>
+                        <li>Real-world use cases & business insights</li>
+                        <li>Experience from 100+ company implementations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="source-card">
+                <div class="source-title">Practical Design Patterns for Modern AI Systems</div>
+                <a href="https://www.infoq.com/articles/practical-design-patterns-modern-ai-systems/" target="_blank" class="source-link">Read Article</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Proven architectural patterns for AI applications</li>
+                        <li>Best practices for production AI system design</li>
+                        <li>Real-world implementation strategies and trade-offs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="source-card">
+                <div class="source-title">HackAPrompt - Prompt Injection Challenge</div>
+                <a href="https://www.hackaprompt.com" target="_blank" class="source-link">Try Challenges</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Interactive prompt injection and security challenges</li>
+                        <li>Learn defensive prompting through hands-on practice</li>
+                        <li>Real-world examples of prompt vulnerabilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-header">🔮 Trends & Future</div>
+        <div class="sources-grid">
+            <div class="source-card">
+                <div class="source-title">The Evolution of AI in Software Engineering</div>
+                <a href="https://salesforcedevops.net/index.php/2024/07/01/the-evolution-of-ai-in-software-engineering/" target="_blank" class="source-link">Read Analysis</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Timeline of AI adoption in software</li>
+                        <li>Future trends in AI-driven development</li>
+                        <li>Strategic perspective on AI transformation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="source-card">
+                <div class="source-title">MCP vs. A2A: Friends or Foes</div>
+                <a href="https://www.newsletter.swirlai.com/p/mcp-vs-a2a-friends-or-foes/" target="_blank" class="source-link">Read Comparison</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Comparison of orchestration approaches</li>
+                        <li>Strengths & weaknesses of MCP vs. A2A</li>
+                        <li>Technical analysis of AI system architectures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-header">💡 Inspiration</div>
+        <div class="sources-grid">
+            <div class="source-card">
+                <div class="source-title">Hien Lu - Our Inspiration from QCon SF</div>
+                <a href="https://www.linkedin.com/in/hienluu/" target="_blank" class="source-link">View Profile</a>
+                <div class="source-description">
+                    <ul>
+                        <li>Speaker profile & experience in AI/ML</li>
+                        <li>Original inspiration for talk format & style</li>
+                        <li>Thought leadership in AI engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>These sources were carefully selected to provide both theoretical understanding and practical implementation guidance for AI and LLM applications. Happy learning! 🚀</p>
+        </div>
+    </div>
+</body>
+</html>

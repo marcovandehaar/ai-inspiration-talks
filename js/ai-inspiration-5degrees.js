@@ -19,9 +19,9 @@ function updateProgressIndicator() {
     // Index 3: AI in Way of Working section
     // Index 4: AI in Apps section
     // Index 5: Prompt Engineering section
-    // Index 6+: Closing slide (stays on last main section)
-    const sections = ['intro', 'intro', 'llm', 'wow', 'apps', 'prompt'];
-    const currentSection = sections[Math.min(slideIndex, sections.length - 1)] || 'prompt';
+    // Index 6: Practical Tips section
+    const sections = ['intro', 'intro', 'llm', 'wow', 'apps', 'prompt', 'tips'];
+    const currentSection = sections[Math.min(slideIndex, sections.length - 1)] || 'tips';
     
     // Update body data attribute
     document.body.setAttribute('data-section', currentSection);
