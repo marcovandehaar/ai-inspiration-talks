@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Inspiration Assignments</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e3f2fd 100%);
+            min-height: 100vh;
+            color: #212121;
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            color: #e65100;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            color: #424242;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .language-selection {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .language-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e3f2fd 100%);
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            min-width: 200px;
+        }
+
+        .language-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-color: #1565c0;
+        }
+
+        .language-card h2 {
+            color: #1565c0;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .language-card p {
+            color: #666;
+            font-size: 0.95em;
+            margin: 0;
+        }
+
+        .flag {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #e65100, #ff9800);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+            margin-top: 50px;
+        }
+
+        .back-link:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header p {
+                font-size: 1.1em;
+            }
+            
+            .language-selection {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .language-card {
+                padding: 25px;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Inspiration Assignments</h1>
+            <p>Choose your language / Kies je taal</p>
+        </div>
+
+        <div class="language-selection">
+            <a href="en/index.html" class="language-card">
+                <div class="flag">🇬🇧</div>
+                <h2>English</h2>
+                <p>Interactive assignments in English</p>
+            </a>
+
+            <a href="nl/index.html" class="language-card">
+                <div class="flag">🇳🇱</div>
+                <h2>Nederlands</h2>
+                <p>Interactieve opdrachten in het Nederlands</p>
+            </a>
+        </div>
+
+        <a href="../ai-inspiration-5degrees.html" class="back-link">← Back to Main Presentation</a>
+    </div>
+</body>
+</html>
