@@ -287,6 +287,8 @@ gulp.task('build-azure', gulp.series('build', async () => {
     // Copy all necessary files to output directory
     const filesToCopy = [
         './ai-inspiration-5degrees.html',
+        './sources.html',
+        './assignments/**/*',
         './dist/**/*',
         './plugin/**/*',
         './assets/**/*',
