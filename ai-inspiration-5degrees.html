@@ -512,6 +512,33 @@
 
             <!-- Prompt Engineering Section (Horizontal Section 5) -->
             <section>
+
+                <section class="slide-bg">
+                    <div class="r-vstack r-stretch">
+                        <img src="assets/img/promptingtechniques.png" style="width: 90%; margin: auto;">
+                        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                            <div class="definition-box"
+                                style="flex: 1; margin-right: 10px; text-align: center; color: inherit; font-weight: bold;">
+                                <p style="color: #e65100;">1565 papers</p>
+                            </div>
+                            <div class="definition-box"
+                                style="flex: 1; margin-left: 10px; text-align: center; color: inherit; font-weight: bold;">
+                                <p style="color: #e65100;">~100 prompting techniques</p>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        <ul>
+                            <li><strong>Prompt Patterns Introduction:</strong> In recent years, researchers from companies like Google, OpenAI, and Meta have explored prompt patterns. You know what's funny here? This is the first time we have this tool, AI, which we have to research how to use it. There's no manual here.</li>                            
+                            <li>So, a lot of research is being done on how to best use them. They found that structuring prompts in standard ways that align with AI learning capabilities increases the likelihood of relevant, insightful responses.</li>                            
+                            <li>This report from OpenAI and Microsoft was published in 2024.</li>
+                            <li>They conducted a literature review of over 1,500 prompt engineering related papers,
+                                analyzing different kinds of techniques.</li>
+                            <li>The point here is that mastering prompt engineering is not just about using natural
+                                language.</li>
+                            <li>So structure is important, and reusable patterns have been identified. </li>
+                        </ul>
+                </section>
                 <section class="slide-bg">
                     <div class="r-vstack r-stretch prompt-example" style="height: 100%;">
                         <h2>Prompt Structure</h2>
@@ -566,7 +593,7 @@
                     <aside class="notes">
 
                         <ul>
-                            <li>MARCO:See, you can ask an LLM anything. It'll answer any simple question you have. But,
+                            <li>MARCO:Let's start with structure. See, you can ask an LLM anything. It'll answer any simple question you have. But,
                                 in order to improve the chance of getting anything useful, it's necessary to ask the
                                 right question. This requires structure</li>
                             <li><strong>Role:</strong> Define a perspective from where AI should act as (e.g., expert,
@@ -688,11 +715,12 @@
                     </div>
                     <aside class="notes">
                         <ul>
-                            <li>Now I'm not going to show you the response here, but the slides will be available to everyone at the end, and I will challenge you to try it yourself. It's far more effective.</li>
-                            <li>Even though prompting is very forgiving, using it effectively like this is much like strict syntax in programming languages.</li>
+                            <li>Now I'm not going to show you the response here, but the slides will be available to everyone at the end, and I will challenge you to try it yourself. It's far more effective.</li>                            
                         </ul>
                     </aside>
                 </section>
+
+                  
 
                 <section data-background-color="#f8f9fa" class="slide-bg">
                     <h2>Prompting Patterns</h2>
@@ -760,10 +788,8 @@
                     
                     <aside class="notes">
                         <ul>
-                            <li><strong>Prompt Patterns Introduction:</strong> In recent years, researchers from companies like Google, OpenAI, and Meta have explored prompt patterns. You know what's funny here? This is the first time we have this tool, AI, which we have to research how to use it. There's no manual here.</li>                            
-                            <li>So, a lot of research is being done on how to best use them. They found that structuring prompts in standard ways that align with AI learning capabilities increases the likelihood of relevant, insightful responses.</li>
-                            <li>Some examples of these patterns include few-shot, chain-of-thought, tree-of-thoughts, and flipped interaction. Look them up—interesting stuff!</li>
-                            <li>I'll quickly dive into a few of them: Few shots, Chain of Thought, and Flipped interaction.</li>
+                            
+                            <li>So we have a basic structure. Now, where there is structure, there are also patterns. I'll quickly dive into a few of most well known ones: Few shots, Chain of Thought, and Flipped interaction.</li>
                             
                             <li><strong>Few-Shot Pattern:</strong> This is like teaching by demonstration — instead of telling the model the rule, you just show it a couple of examples.</li>
                             <li>Works well when you need consistent formatting or when you're nudging the model toward a specific style.</li>
