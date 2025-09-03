@@ -307,31 +307,29 @@
                     
                     <aside class="notes">
                         <ul>
-                            <li>So, we've seen that it can actually do a lot. Let your imagination run wild for a moment. I'm sure you can think of at least 10 things it could do to improve the work process of you or your colleagues.</li>
-                            <li>Well, you're not alone :) There are thousands of AI tools that could help you in your work and new ones are launched every day that could make tedious tasks easier, help you brainstorm, generate text or images etc. Take notes, summarize documents etc etc…</li>
+                            <li>So, we've seen that it can actually do a lot. Let your imagination run wild for a moment. I'm sure you can think of at least 10 things it could do to improve the work process.</li>
+                            <li>Well, you're not alone :) There are thousands of AI tools that could help you in your work and new ones are launched every day. They might help you brainstorm, generate text or images etc. Take notes, summarize documents etc etc…</li>
                             <li>But which can you use? and more importantly, why?</li>
-                            <li>I'll start saying that I'm not your legal officer, nor do I pretend to be an expert in the rules and regulation concerning data. So the disclaimer I'll give you is "If you doubt, check it with the right people."</li>
-                            <li>Having said that, there are some principles you should keep in mind. Things you should always keep in mind when using AI tooling.</li>
+                            <li>Let me start by saying that I'm not your legal officer, nor do I pretend to be an expert in the rules and regulation concerning data. So the disclaimer I'll give you is "If you doubt, check it with the right people."</li>
+                            <li>Having said that, there are some principles you should keep in mind. </li>
                             <li>Whenever considering a tool, you should always ask: Where is my data going and what will it be used for?</li>
-                            <li>Not always easy to answer, when in doubt, verify with the part of your organisation that can help you with that.</li>
-                            <li>See, when you go to ChatGPT.com, you are talking to a version of a LLM. This means that this model runs in the public cloud, probably in one of the huge data centers in the US. OpenAI is a US company. So whatever you send in will probably go to the US.</li>
-                            <li>GDPR considerations:
+                            <li>Not always easy to answer, when in doubt, verify with the right people of your organisation that can help you with that.</li>
+                            <li>Why, well, for instance when you go to ChatGPT.com, you are talking to a PUBLIC version of a LLM. This means that this model runs in the public cloud, probably in one of the huge data centers in the US. OpenAI is a US company. So whatever you send in will probably go to the US.</li>
+                            <li>This mean you have to consider data regulations like the GDPR. The GDPR says a whole lot, but 1 interesting bit here is that :
                                 <ul>
-                                    <li>PII (Personal Identifiable Information) - personal data. You own your own data, so you're allowed to send in that, though I would strongly advise against it.</li>
-                                    <li>PII of others - this is where you need to be careful</li>
+                                    <li>PII (Personal Identifiable Information) shoudl remain within the boudaries of the EU (and other coutnreis taht have opted in).</li>
+                                    
                                 </ul>
                             </li>
-                            <li>Proprietary data, like source code. You cannot publicly share source code of our products.</li>
+                            <li>Proprietary data, like source code. You cannot publicly share source code of our products. </li>
+                            <li>SO for instance, as a developer, you cannot JUST use all the cool tools that help you develop. You might "publish" the source code you're working on. </li>
+                            <li>so before using a tool with personal information or propriatary data, you need to know how this tool handles that data. What guarantees does it give and how trustworthy do we deem them.</li>
+
                         </ul>
                     </aside>
                 </section>
                 
-                <!-- Public vs Private Models slide -->
-                <section data-background-color="#f8f9fa" class="slide-bg">
-                    <h3>Public vs. Private Models</h3>
-                    <img src="assets/drawio/publicllm.drawio.svg" alt="Public vs Private LLM" style="max-width: 90%; max-height: 70vh; margin-top: 20px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto; object-fit: contain;">
-                </section>
-                
+               
                 <!-- Dummy vertical slide -->
                 <section data-background-color="#f8f9fa" class="slide-bg">
                     <h3>WoW Examples</h3>
@@ -341,43 +339,32 @@
                         <li><a href="https://topicus.sharepoint.com/sites/TopicusArtificialIntelligence/Lists/AI%20Tools%20CMDB/AllItems.aspx?viewid=0da199d9-1820-4bf4-b24e-429ca8c42d75&env=WebViewList" target="_blank">Tools inventory</a></li>    
                         <li>Demo: <a href="https://notebooklm.google/" target="_blank">NotebookLM</a></li>
                     </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>To deal with this, for Topicus we have setup an AI initiative where we can request tools, which will then be evaluated and greenlit or redlit.</li>
+                            <li> I dont know whether this applies to you, but at least you can take it as an example. </li>
+                            <li>To give you just 1 example on how murky it can get, whether you can use a tool or not, let me show you NotebookLM, who here, has used this tool?</li>
+                            <li>show, upload file, make mindmap. explain data goes. BUT, private version for Google cloud enterprise.</li>
+                        </ul>
+                    </aside>
+
                 </section>
             </section>
 
             <!-- AI in Apps Section (Horizontal Section 4) -->
-            <section>
-                <section data-background-color="#f8f9fa" class="slide-bg">
-                    <h2>AI in Applications</h2>
-                    <div class="definition-box">
-                        <p><strong>Incorporating AI Responsibly</strong> </p>
-                    </div>
-                    <ul>
-                        <li>Customer data is not ours to share publicly</li>
-                        <li>Data often contains PII (Personal Identifiable Information)</li>
-                        <li>Public models not suitable for most use cases</li>
-                        <li>Our preferred solution: Serviced models</li>
-                        <li>
-                            <a href="https://oai.azure.com/resource/deployments?wsid=/subscriptions/b39c34f8-f385-425e-9237-c09f9fd6d242/resourceGroups/rg-fyndoo-openai/providers/Microsoft.CognitiveServices/accounts/fyndoo-sweden&tid=ffe86e1f-70b6-4c17-b2db-416509cdb0c1" target="_blank">
-                                Example: GPT on Azure Foundry
-                            </a>
-                        </li>
-                        <li>Alternative: Local deployment</li>
-                    </ul>
-                    
+                           <!-- Public vs Private Models slide -->
+                 <section>
+                           <section data-background-color="#f8f9fa" class="slide-bg">
+                    <h3>AI in our applications</h3>
+                    <img src="assets/drawio/publicllm.drawio.svg" alt="Public vs Private LLM" style="max-width: 90%; max-height: 70vh; margin-top: 20px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto; object-fit: contain;">
                     <aside class="notes">
                         <ul>
-                            <li>So how do we include AI in our applications? What do we need to take into account?</li>
-                            <li>Well, firstly we work with customer data. This data often is not ours, so also not for us to publicly share. Also, it might contain PII, so for most use cases in our software, we cannot use public models.</li>
-                            <li>For us in Akkuro Lending, our preferred solution: work with serviced models
-                                <ul>
-                                    <li>Simple (just link to API, and start building!)</li>
-                                    <li>Controlled environment</li>
-                                </ul>
-                            </li>
-                            <li>Azure deployments example - we can deploy models in controlled environments</li>
-                            <li>An alternative is local deployment of a model. There are open source models out there that you can deploy locally. Meta has a famous one called "OLlama" which you can even deploy on your laptop. You cannot deploy the huge models powering ChatGPT or Claude. These are closed models, only the backing companies offer them, and they usually partner with a cloud provider to support  more private options.</li>
-                            <li>keep in mind that for private deployments, you're also responsible for maintenance. keeping it up to date, and maybe more complex things like MLOPS.</li>
-                            <li>This is a different ball game and something that you should invest in if you want to take it to PRD.</li>
+                            <li>So, we want to use AI models in our applications. How can we do this? You could connect to a public model, like the ChatGPT API. But remember the data. Our applications in general are very heavy on customer data. Data that belongs to the customer, or to us and might fall under rules or regulations. </li>
+                            <li> So you might be careful about using public models. Alternatively You can locally host a model; some smaller models are open source and can be run locally. Not the extremely large ones like GP-4 or 5, or Claude. They're way too big and proprietary.</li>
+                            <li>This also brings new challenges. Like hosting your own software, hosting your own model is a separate skill. It could be interesting, but needs to fit your use case and your skill set.</li>
+                            <li>Another option is to use a serviced, private instance of a model. Many cloud providers offer this. Microsoft Azure, Amazon AWS, Google Cloud. You can deploy models in your own cloud environment and have more control over where your data goes.</li>
+                            <li>Not every model is available on every cloud, GPT-4 and 5 models are available on Azure only, because OpenAI has partnered with Microsoft. Claude models are only available on AWS Bedrock, Google Gemini, of course only on Google cloud.</li>
+                            <li>within lending, serviced Models are out current preference. Because it simplifies using AI, which is complex enough as it is, and provides more control over data privacy.</li>
                         </ul>
                     </aside>
                 </section>
