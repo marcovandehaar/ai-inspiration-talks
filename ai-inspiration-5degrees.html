@@ -130,12 +130,12 @@
                     <aside class="notes">
                         <ul>
                             <li>I will be telling you guys a lot, about a lot of subjects. But that's ok, I do not aim to teach you much here, I aim to inspire! So I ask you, if you hear anythin interesting, make a note. It will be for you to dive deeper into that :)</li>
-                            <li>So today we're going to explore AI from 5 different angles - hence "5 Degrees of AI Inspiration"</li>
                             <li>First, we'll dive into what Large Language Models actually are - the technology that powers ChatGPT and similar tools</li>
                             <li>Then we'll look at how AI is changing our way of working - the tools and processes that are already transforming how we collaborate</li>
                             <li>Next, we'll explore AI in actual applications - real examples of AI being used in software and tools</li>
                             <li>We'll also cover prompt engineering - how to effectively communicate with AI systems to get the best results</li>
                             <li>And finally, we'll have time for your questions and a discussion about what all this means for us</li>
+                        <li>I'm going to run out of Time before I'm going to run out of things to say. So I might decide to skip a slide here, or go a bit deeper there, but know that you'll all have access to this presentation at the end, and if you have any questions, feel free to contact me.</li>
                         </ul>
                     </aside>
                 </section>
@@ -147,8 +147,12 @@
                     <h2>Large Language Models</h2>
                     <img src="assets/img/aihistory.jpg" alt="AI History" style="max-width: 800px; margin-top: 30px; border-radius: 15px; display: block; margin-left: auto; margin-right: auto;">
                     <aside class="notes">
-                        <p>Ok, so AI isnt new. It's been around for decades as you can glance here. But only recently science and technology reached a critical point where we could make the power of A.I. generally available to everyone. LLM's Large Language Models</p>
-                    </aside>
+                        <ul>
+                            <li>Think back to the first time you saw a magic show as a kid. You were amazed, right? The tricks felt impossible. And if you were like me, you wanted to know how the magician did it.</li>
+                            <li>But here’s the thing: learning the trick itself isn’t enough. Real magic isn’t just about the mechanics. It’s about presentation, timing, guiding the audience’s attention—making them look here, so they don’t look there.</li>
+                            <li>Large Language Models work the same way. To truly understand them, you need to look behind the curtain—not just at the trick, but at the performance that makes the magic happen.</li>
+                            <li>Ok, so AI isn't new. It's been around for decades as you can glance here. But only recently science and technology reached a critical point where we could make the power of A.I. generally available to everyone. LLM's Large Language Models.</li>
+                        </ul>
                 </section>
                 
                 <!-- What is an LLM slide -->
@@ -217,6 +221,14 @@
                             <li>What does that mean? For example, if I ask you your favorite world cuisine, you might answer "Vietnamese." If I ask you again a minute later, you'll likely give the same answer. A model, however, might give a different answer the second time, because its responses are based on probability, not certainty.</li>
                             <li>The nature of these models is probabilistic, not deterministic. That's why it's impossible to guarantee 100% predictable answers. There are techniques to improve consistency, but it's important to understand that this technology is fundamentally based on probability calculations.</li>
                             <li>If the models were always completely random, they would be useless. Fortunately, there are parameters you can adjust, such as "top-p" and "temperature," to control the randomness. (Demo these settings.)</li>
+                        <li>DEMO:  This will be more clear when we look at a small example. The temperature adjusts the
+                                probability distribution through a mathematical function. When the temperature is low,
+                                the probability gap between words widen, favoring the high probability words. When the
+                                temperature is high, the probability distribution becomes more even, giving lower
+                                probability words a better chance of being selected.</li>
+                            <li> Top-P acts like a filter or a window. When the value is high, the window size is
+                                larger, so allow more words to come in, to be selected as the next word, and vice versa,
+                                when it's low and it's narrow, so less words will get in.</li>
                         </ul>
                     </aside>
                 </section>
@@ -1186,16 +1198,13 @@
                     </div>
                     <div style="font-size: 0.8em; line-height: 1.2; margin-top: 10px;">
                         <div style="margin-bottom: 8px;">Check out the <a href="sources.html" target="_blank" style="color: #1565c0; font-weight: bold;">sources & further reading</a></div>
-                        <div style="line-height: 1.0;">Or contact me<br><img src="assets/img/Slack-logo.png" alt="Slack" style="height: 2.0em; vertical-align: middle; margin: 0;"> <span style="color: #1565c0; font-weight: bold;">@Marco van de Haar</span></div>
+                        <div style="line-height: 1.0;">
+                            <a href="assignments/index.html" target="_blank" style="color: #1565c0; font-weight: bold;">or try some practice assignments</a><br>
+                            <img src="assets/img/Slack-logo.png" alt="Slack" style="height: 2.0em; vertical-align: middle; margin: 0;"> <span style="color: #1565c0; font-weight: bold;">@Marco van de Haar</span></div>
                     </div>
                 </div>
                 <aside class="notes">
-                    <p>And that’s where we’ll leave it; no Q&A, just a question to take with you:</p>
-                    <p>Is prompt engineering truly a new programming language… or just a clever way of getting what we want from a black box?</p>
-                    <p>We’re not giving you the answer — that’s for you to keep thinking about, debating over drinks, or arguing about in Slack.</p>
-                    <p>You can scan the QR code to access our slides, and if you want to dive deeper, we’ll be outside with a drink.</p>
-                    <p>Or join the discussion in the #topiconf-prompt-engineering Slack channel. Let’s keep the conversation going!</p>
-                </aside>
+                    <p>And that’s where we’ll leave it; </aside>
             </section>
 
             </section>
